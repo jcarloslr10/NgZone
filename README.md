@@ -1,8 +1,8 @@
 # Optimization-UI-Events-NgZone
 
-Angular samples using NgZone to improve performance when your application works with UI events (async task in general).
+Angular (5.0.0-rc.2) samples using NgZone to improve performance when your application works with UI events (async task in general).
 
-You can see several sample applications, a basic one that explains the relationship of NgZone with the Angular change detector, and two other applications that work with mouse events simulating drag & drop. The first one is not optimized with NgZone and the second one is.
+You can see several sample applications, a basic one that explains the relationship of NgZone with the Angular change detector which uses a 'noop' Zone to run the application without NgZone, and two other applications using NgZone that work with mouse events simulating drag & drop. The first one is not optimized with NgZone and the second one is.
 
 ### Prerequisites
 
