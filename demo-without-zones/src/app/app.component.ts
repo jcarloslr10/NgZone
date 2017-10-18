@@ -1,17 +1,21 @@
-import { Component, ApplicationRef } from '@angular/core';
+import { Component, ApplicationRef, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-    title = 'Angular 4';
+export class AppComponent implements OnInit {
+    title = '...';
 
-    constructor(appRef: ApplicationRef) {
+    constructor(private _appRef: ApplicationRef) {
+        this.title = 'Angular 4';
+    }
+
+    ngOnInit(): void {
         setTimeout(() => {
             this.title = 'Pragmatic Talks';
-            appRef.tick();
-        }, 1000);
+            this._appRef.tick();
+        }, 2000);
     }
 }
