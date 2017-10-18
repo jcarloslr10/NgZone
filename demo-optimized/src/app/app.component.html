@@ -1,0 +1,13 @@
+<div class="app">
+    <svg width="1850" height="950"
+        fill="white"
+        (mousedown)="mouseDown($event)"
+        (mouseup)="mouseUp($event)">
+        <svg:g
+            app-rectangle
+            *ngFor="let rectangle of rectangles"
+            [rectangle]="rectangle"
+            [selected]="rectangle.id == currentId">
+        </svg:g>
+    </svg>
+</div>

@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('demo-with-zones App', () => {
+describe('demo-unoptimized App', () => {
   let page: AppPage;
 
   beforeEach(() => {
